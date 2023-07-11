@@ -1,0 +1,68 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/044760a194.js" crossorigin="anonymous"></script> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=VT323&display=swap" rel="stylesheet">
+
+    <script defer src="main.js"></script>
+    
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="calculator">
+            <div class="display">
+                <div class="display-prev" id="prevOperationDisplay"></div>
+                <div class="display-now" id="nowOperationDisplay">0</div>
+
+            </div>
+            <div class="keypad">
+                <button class="first-row" id="clearAllBtn">AC</button>
+                <button class="first-row" id="clearEntryBtn">CE</button>
+
+                <button number-input>7</button>
+                <button number-input>8</button>
+                <button number-input>9</button>
+                <button class="btn-operator"><span>&#247</span></button>
+
+                <button number-input>4</button>
+                <button number-input>5</button>
+                <button number-input>6</button>
+                <button class="btn-operator">x</button>
+
+                <button number-input>1</button>
+                <button number-input>2</button>
+                <button number-input>3</button>
+                <button class="btn-operator">-</button>
+
+                <button number-input>0</button>
+                <button id="decimalBtn">.</button>
+                <button id="equalBtn">=</button>
+                <button class="btn-operator">+</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        f00lg0ldl0af
+        </p>
+        
+        <a href="https://github.com/f00lg0ldl0af" target="_blank">
+        <i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
+</body>
+
+</html>
