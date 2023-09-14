@@ -8,131 +8,127 @@
     --border: #001B3A;
     --screen: #fefefe;
     --calculator: #91BAD6; 
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+}
 
-  html {
-    /* footer support */
-    position: relative;
-    min-height: 100%;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  body {
-    background-color: var(--background);
-    color: var(--font);
-    font-family: 'Playfair Display', serif;
-    line-height: 1.6;
-    /* footer support */
-    margin-bottom: 100px;
-  }
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
 
-  button {
-    border: none;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    outline: none;
-  }
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  /* footer support */
+  margin-bottom: 100px;
+}
 
-                              /*MAIN*/
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    min-height: 500px;
-    padding: 10px;
-    margin-top: 50px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
 
 .calculator {
-    width: 400px;
-    border: 2px var(--border) solid;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: var(--calculator);
-  }
+  width: 400px;
+  border: 2px var(--border) solid;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--calculator);
+}
 
 .display {
-    padding: 10px 20px;
-    border: 2px var(--border) solid;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: var(--screen);
-    text-align: right;
-    word-wrap: break-word; /*This breaks a word once it is too long to fit by itself*/
-    word-break: break-all; /* This breaks the word at the point it overflows*/
-  }
+  padding: 10px 20px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: var(--screen);
+  text-align: right;
+  word-wrap: break-word; /*This breaks a word once it is too long to fit by itself*/
+  word-break: break-all; /* This breaks the word at the point it overflows*/
+}
 
 .display-prev {
-    min-height: 32px;
-    font-size: 20px;
+  min-height: 32px;
+  font-size: 20px;
 }
 
 .display-now {
-        min-height: 64px;
-        font-size: 40px;
+      min-height: 64px;
+      font-size: 40px;
 }
 
 .keypad {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
 
 .first-row {
-    grid-column: span 2;
-    /*grid-column-start specifies grid item start position*/
-  }
+  grid-column: span 2;
+}
 
 button {
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 25px;
-  }
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 25px;
+}
 
 .first-row, .btn-operator {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 #equalBtn {
-    background-color: var(--background-third);
-    color: var(--font-light);
+  background-color: var(--background-third);
+  color: var(--font-light);
 }
-                              /*MAIN*/
-                              /*FOOTER*/
+
 .footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-height: 40px;
-    min-height: 7.5vh;
-    flex-grow: 1;
-    background-color: var(--footer);
-    color: var(--font-light);
-  }
-  
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-height: 40px;
+  min-height: 7.5vh;
+  flex-grow: 1;
+  background-color: var(--footer);
+  color: var(--font-light);
+}
+
 
 .fa-github {
-    color: var(--background);
-    font-size: 30px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .fa-github:hover {
-    transform: rotate(360deg) scale(1.2);
-  }
+  color: var(--background);
+  font-size: 30px;
+  transition: transform 0.2s ease-in-out;
+}
 
-                            /*FOOTER*/ 
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
